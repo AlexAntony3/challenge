@@ -1,13 +1,14 @@
 import css from './App.module.css';
 import Sidebar from './components/Sidebar';
-import StatefulGreetingWithPrevState from './components/StatefulGreetingWithPrevState';
+import NavBarSimple from './components/NavBarSimple';
+import NavBarForm from './components/NavBarForm';
 
 function App() {
   return (
     <div className={css.App}>
       {<Sidebar />}
-
-      <StatefulGreetingWithPrevState greeting="I'm a stateful class component" name="Alex"/>
+      {/* {<NavBarSimple />} */}
+      {<NavBarForm />}
     </div>
   );
 }
